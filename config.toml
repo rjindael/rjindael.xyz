@@ -1,4 +1,121 @@
-baseURL = 'https://rjindael.xyz/'
-languageCode = 'en-us'
-title = 'rjindael'
-theme = 'hello-friend-ng'
+baseURL = "https://rjindael.xyz/"
+languageCode = "en-us"
+title = "rjindael"
+theme = "hello-friend-ng"
+
+paginate = 10
+rssLimit = 10 
+copyright = "<a href=\"https://creativecommons.org/licenses/by-nc/4.0/\">CC BY-NC 4.0</a>"
+
+googleAnalytics = "G-FQJX1QB1QP"
+
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo = false
+enableEmoji = true
+enableMissingTranslationPlaceholders = false
+disableRSS = false
+disableSitemap = false
+disable404 = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "rjindael"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  description = "I hate computers."
+  keywords = "rjindael"
+  images = [""]
+
+  homeSubtitle = "I hate computers."
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  #
+  # gitUrl = ""
+
+  disableReadOtherPosts = false
+  enableThemeToggle = true
+  enableSharingButtons = false
+  enableGlobalLanguageMenu = false
+  customCSS = []
+  customJS  = []
+  justifyContent = false
+
+  [params.footer]
+    trademark = true
+    rss = true
+    copyright = true
+    author = true
+
+    topText = []
+    bottomText = [
+      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+      "<a href=\"https://github.com/rjindael/rjindael.xyz\">Source</a>"
+    ]
+
+  [params.favicon.color]
+    mask = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme = "#1b1c1d"
+
+  [params.logo]
+    logoMark = " "
+    logoText = "rjindael"
+    logoHomeLink = "/"
+    logoCursorDisabled = true
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:rjindaal@pm.me"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/rjindael"
+
+  [[params.social]]
+    name = "telegram"
+    url  = "https://t.me/rjindael"
+
+  [[params.social]]
+    name = "hackerone"
+    url  = "https://hackerone.com/rjindael?type=user"
+  
+  [[params.social]]
+    name = "gpg"
+    url  = "https://rjindael.xyz/keys/009011BC48C9FD28977292E754A6942C19BDBADC.asc"
+  
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
+  
+  [[menu.main]]
+    identifier = "git"
+    name       = "Git"
+    url        = "https://git.rjindael.xyz/"
+
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
