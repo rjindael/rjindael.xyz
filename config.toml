@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "rjindael"
 theme = "hello-friend-ng"
 
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
 paginate = 10
 rssLimit = 10 
 copyright = "<a href=\"https://creativecommons.org/licenses/by-nc/4.0/\">CC BY-NC 4.0</a>"
@@ -33,9 +36,9 @@ disableHugoGeneratorInject = false
   hrefTargetBlank = true
 
 [taxonomies]
-  tag      = "tags"
+  tag = "tags"
   category = "categories"
-  series   = "series"
+  series = "series"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -109,11 +112,6 @@ disableHugoGeneratorInject = false
     identifier = "posts"
     name       = "Posts"
     url        = "posts/"
-  
-  [[menu.main]]
-    identifier = "git"
-    name       = "Git"
-    url        = "https://git.rjindael.xyz/"
 
   [[menu.main]]
     identifier = "about"
