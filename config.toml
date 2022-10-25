@@ -1,0 +1,4 @@
+baseURL = 'https://rjindael.xyz/'
+languageCode = 'en-us'
+title = 'rjindael'
+theme = 'hello-friend-ng'
