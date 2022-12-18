@@ -107,6 +107,10 @@ disableHugoGeneratorInject = false
     name = "gpg"
     url  = "https://rjindael.xyz/keys/009011BC48C9FD28977292E754A6942C19BDBADC.asc"
   
+  [[params.social]]
+    name = "mastodon"
+    url  = "https://mstdn.party/@rjindael"
+    
 [menu]
   [[menu.main]]
     identifier = "posts"
